@@ -25,17 +25,16 @@
 
 <body>
     <header>
-        <div class="header flex">
-            <h1>Casteria</h1>
-            <nav class="navbar navbar-expand-lg">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
+                    <a class="navbar-brand fs-1 fw-bold" href="#">Casteria</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -241,18 +240,12 @@
         });
     </script>
 
-    <!-- アコーディオン ホバー開閉-->
+    <!-- アコーディオン-->
     <script>
         $(function () {
-            if (window.matchMedia("(max-width:769px)").matches) {
-                $('.ac-parent').on('click', function () {
-                    $(this).next().slideToggle();
-                });
-            } else {
-                $('.ac-parent').hover(function () {
-                    $(this).next().slideToggle(600);
-                });
-            };
+            $('.ac-parent').on('click', function () {
+                $(this).next().slideToggle();
+            });
         });
     </script>
     <!-- スクロールしたら表示 -->
